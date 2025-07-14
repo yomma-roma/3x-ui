@@ -60,6 +60,5 @@ EXPOSE 54321
 # Mount volume for configs
 VOLUME [ "/etc/x-ui" ]
 
-# Start x-ui automatically in server mode
-CMD [ "./x-ui", "start" ]
+
 ENTRYPOINT [ "/app/DockerEntrypoint.sh" ]
